@@ -1,0 +1,5 @@
+# robots.txt para Capitu Leitor PDF/EPUB PREMIUM
+User-agent: *
+Allow: /
+
+Sitemap: https://capitureader.com.br/sitemap.xml

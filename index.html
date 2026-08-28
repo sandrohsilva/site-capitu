@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capitu Leitor PDF/EPUB PREMIUM — Leitor Imersivo & Catálogo Curado</title>
+  
+  <!-- SEO & Metatags -->
+  <meta name="description" content="Baixe o Capitu Leitor PDF/EPUB PREMIUM na Google Play. O leitor imersivo de PDF e EPUB com hábitos de leitura gamificados, meta diária, conquistas e milhares de obras clássicas curadas.">
+  <meta name="keywords" content="Capitu Reader, Capitu Leitor PDF/EPUB PREMIUM, leitor de epub, leitor de pdf android, livros gratis, dom casmurro, machado de assis, project gutenberg, habito de leitura, iA Tech">
+  <meta name="author" content="iA Tech">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#FAF7F2">
+  <link rel="canonical" href="https://capitureader.com.br/">
+
+  <!-- OpenGraph Tags (Facebook / LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://capitureader.com.br/">
+  <meta property="og:title" content="Capitu Leitor PDF/EPUB PREMIUM — O Leitor Imersivo de Clássicos">
+  <meta property="og:description" content="Leia PDFs e EPUBs sem distrações, desenvolva metas diárias de leitura e acesse um acervo curado de clássicos em domínio público.">
+  <meta property="og:image" content="images/mulher-sentada-lendo.jpg">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Capitu Leitor PDF/EPUB PREMIUM">
+  <meta name="twitter:description" content="O leitor definitivo para quem ama literatura. PDF, EPUB, metas diárias, conquistas e curadoria editorial.">
+  <meta name="twitter:image" content="images/mulher-sentada-lendo.jpg">
+
+  <!-- Favicon & Touch Icon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Google Fonts: Lora (Serif) & Plus Jakarta Sans (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org Data Estruturada (JSON-LD para Aplicativo Android) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Capitu Leitor PDF/EPUB PREMIUM",
+    "operatingSystem": "Android",
+    "applicationCategory": "BooksApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "iA Tech",
+      "url": "https://iatech.com.br/"
+    },
+    "description": "Leitor de e-books em PDF e EPUB sem distrações, com gamificação de hábitos de leitura, metas diárias, troféus e catálogo curado de obras clássicas.",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=br.com.iatech.capitureader&pcampaignid=web_share"
+  }
+  </script>
+
+  <!-- ========================================================================== -->
+  <!-- GOOGLE TAG MANAGER / ANALYTICS PLACEHOLDER                                -->
+  <!-- Insira abaixo sua tag do Google Tag Manager (GTM-XXXXXX) ou GA4 (G-XXXXXX)   -->
+  <!-- ========================================================================== -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PLACEHOLDER');
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- Header / Navegação -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo" id="header-logo">
+        <img src="images/logo.png" alt="Logo Capitu Leitor PDF/EPUB PREMIUM" class="logo-img">
+        <span>Capitu <span class="logo-tag">PREMIUM</span></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#recursos" class="nav-link">Recursos</a></li>
+          <li><a href="#gamificacao" class="nav-link">Gamificação & Streaks</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo Curado</a></li>
+          <li><a href="#capturas" class="nav-link">Capturas de Tela</a></li>
+          <li><a href="#premium" class="nav-link">Versão Premium</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=br.com.iatech.capitureader&pcampaignid=web_share" 
+               target="_blank" rel="noopener noreferrer" class="btn btn-playstore" data-location="header">
+              <svg viewBox="0 0 24 24">
+                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L18.81,13.97C19.46,13.59 19.46,12.41 18.81,12.03L16.81,10.88L14.4,12.7L16.81,15.12M14.4,11.3L4.95,1.85C5.11,1.8 5.28,1.77 5.46,1.77C5.9,1.77 6.33,1.96 6.64,2.14L14.4,11.3M4.95,22.15L14.4,12.7L6.64,21.86C6.33,22.04 5.9,22.23 5.46,22.23C5.28,22.23 5.11,22.2 4.95,22.15Z"/>
+              </svg>
+              Google Play
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">
+          <span>📖</span> Leitura Imersiva • Curadoria Digital
+        </div>
+
+        <h1 class="hero-title">
+          Capitu Leitor PDF/EPUB <span>PREMIUM</span>
+        </h1>
+
+        <p class="hero-description">
+          Sua biblioteca de clássicos e o hábito de leitura diário que você sempre quis. Um leitor imersivo, livre de distrações na hora da leitura e repleto de conquistas fora dela.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://play.google.com/store/apps/details?id=br.com.iatech.capitureader&pcampaignid=web_share" 
+             target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-location="hero_primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/>
+            </svg>
+            Baixar na Google Play Store
+          </a>
+          <a href="#recursos" class="btn btn-secondary">Conhecer Recursos</a>
+        </div>
+
+        <div class="hero-features-list">
+          <div class="hero-feature-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Suporte Completo:</strong> Leitores dedicados para EPUB (reflow) e PDF (mecanismo pdfrx).</span>
+          </div>
+          <div class="hero-feature-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Conforto Visual:</strong> Luz quente noturna, temas personalizáveis e modo Zen/DND.</span>
+          </div>
+          <div class="hero-feature-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Privacidade & Offline:</strong> Leia seus arquivos locais a qualquer hora sem precisar de conta online.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-card">
+          <img src="images/mulher-sentada-lendo.jpg" alt="Mulher desfrutando de uma leitura tranquila no aplicativo Capitu Reader">
+        </div>
+        <div class="hero-floating-badge">
+          <div class="floating-icon">🏆</div>
+          <div class="floating-text">
+            <strong>6 Conquistas Exclusivas</strong>
+            <span>Streaks, tempo lido e troféus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner de Estatísticas -->
+  <section class="stats-banner">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">80.000+</div>
+        <div class="stat-label">Obras de Domínio Público</div>
+        <div class="stat-sub">Integração Gutenberg & Curadoria</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Leitura Sem Distrações</div>
+        <div class="stat-sub">Tela de leitura limpa e focada</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">EPUB & PDF</div>
+        <div class="stat-label">Formatos Suportados</div>
+        <div class="stat-sub">Redimensionamento e alta fidelidade</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Offline</div>
+        <div class="stat-label">Biblioteca Pessoal</div>
+        <div class="stat-sub">Leia seus arquivos em qualquer lugar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 1: Recursos de Leitura -->
+  <section class="reading-experience" id="recursos">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Experiência Imersiva</div>
+        <h2>Construído para quem valoriza a verdadeira leitura</h2>
+        <p>Desenvolvemos o Capitu com uma premissa clara: a experiência dentro do livro precisa ser pura, silenciosa e confortável para a sua visão.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M5 5l14 14M5 19L19 5"/></svg>
+          </div>
+          <h3>Suporte EPUB & PDF Avançado</h3>
+          <p>Aproveite a flexibilidade do formato EPUB com ajuste de fonte e texto fluido (reflow), ou a renderização precisa de PDFs pesados através do motor nativo ultra-rápido.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </div>
+          <h3>Modo Noturno & Luz Quente</h3>
+          <p>Proteja seus olhos em leituras noturnas. Alterne entre temas sépia, papel antigo, escuro amolado e aplique o filtro de luz quente para evitar a fadiga ocular.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <h3>Organização "Meus Livros"</h3>
+          <p>Sua estante pessoal sempre organizada A→Z. Defina seu objetivo principal de leitura, avalie obras concluídas e acesse rapidamente o histórico de PDFs recentemente abertos.</p>
+        </div>
+
+        <!-- Highlight Destaque -->
+        <div class="reader-highlight-box">
+          <div class="highlight-content">
+            <div class="badge badge-gold">Leitura Distraction-Free</div>
+            <h3>O livro em primeiro lugar. Gamificação no momento certo.</h3>
+            <p>Diferente de outros aplicativos que enchem a página do livro com anúncios e pop-ups irritantes, o Capitu mantém a página do livro intacta. As métricas de streak, conquistas e desafios são celebradas antes e depois da sua sessão de leitura.</p>
+            <div class="highlight-tags">
+              <span class="badge">Zero avisos na leitura</span>
+              <span class="badge">Modo Zen (Não Perturbe)</span>
+              <span class="badge">Ajuste de Brilho Direto</span>
+            </div>
+          </div>
+          <div class="highlight-visual">
+            <div class="quote-snippet">
+              "Olhos de ressaca? Olhos de noite de tempestade. Olhos de cigana oblíqua e dissimulada."
+            </div>
+            <div class="quote-author">— Machado de Assis, Dom Casmurro</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 2: Gamificação & Streaks -->
+  <section class="gamification-section" id="gamificacao">
+    <div class="container">
+      <div class="gamification-layout">
+        <div class="gamification-info">
+          <div class="badge badge-gold">Hábito de Leitura</div>
+          <h2 class="font-serif" style="font-size: 2.35rem; margin: 0.75rem 0 1rem 0;">Transforme a leitura em uma rotina prazerosa e diária</h2>
+          <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+            Ler mais não precisa ser um esforço. Com o sistema inteligente do Capitu Reader, você define sua meta diária de tempo (5, 15, 30 ou 60 minutos) e acompanha sua evolução dia a dia.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="background: var(--color-gold-light); color: var(--color-gold); font-weight: 700; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</span>
+              <div>
+                <strong style="color: var(--text-primary);">Anel de Meta Diária:</strong>
+                <p style="font-size: 0.95rem; margin-top: 0.2rem;">Veja o anel de progresso se preencher à medida que você lê seus livros favoritos.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="background: var(--color-gold-light); color: var(--color-gold); font-weight: 700; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</span>
+              <div>
+                <strong style="color: var(--text-primary);">Streaks (Dias Consecutivos):</strong>
+                <p style="font-size: 0.95rem; margin-top: 0.2rem;">Mantenha sua chama acesa! O app alerta visualmente a partir das 21h caso sua meta ainda não tenha sido cumprida.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="background: var(--color-gold-light); color: var(--color-gold); font-weight: 700; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</span>
+              <div>
+                <strong style="color: var(--text-primary);">Desafios da Semana:</strong>
+                <p style="font-size: 0.95rem; margin-top: 0.2rem;">Complete 5 dias com 5+ minutos para desbloquear desafios extras de leitura rotativos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="streak-card-preview">
+          <div class="streak-header">
+            <div class="streak-title-area">
+              <div class="fire-badge">🔥</div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: var(--text-primary);">Seu Streak Atual</h4>
+                <p style="font-size: 0.85rem;">7 dias consecutivos de leitura!</p>
+              </div>
+            </div>
+            <span class="badge badge-gold">Nível 2</span>
+          </div>
+
+          <div class="goal-ring-demo">
+            <svg class="ring-svg" viewBox="0 0 140 140">
+              <circle class="ring-bg" cx="70" cy="70" r="60"></circle>
+              <circle class="ring-progress" cx="70" cy="70" r="60"></circle>
+            </svg>
+            <div class="ring-inner-text">
+              <strong>15 / 15</strong>
+              <span>minutos hoje</span>
+            </div>
+          </div>
+
+          <h4 style="font-size: 1rem; margin-bottom: 0.75rem; text-align: center; color: var(--text-primary);">Sua Galeria de Conquistas (Badges)</h4>
+
+          <div class="achievements-grid">
+            <div class="achievement-item">
+              <div class="achievement-icon">📅</div>
+              <div class="achievement-info">
+                <h4>Assíduo</h4>
+                <p>Alcance sequências de 3, 7, 30 e 100 dias de leitura contínua.</p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon">⏱️</div>
+              <div class="achievement-info">
+                <h4>Maratonista</h4>
+                <p>Acumule 1h, 10h e até 50h dedicadas à leitura de livros.</p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon">📚</div>
+              <div class="achievement-info">
+                <h4>Bibliotecário</h4>
+                <p>Conclua a leitura legítima de 5, 20 ou 50 e-books completos.</p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon">🌐</div>
+              <div class="achievement-info">
+                <h4>Poliglota</h4>
+                <p>Leia obras em idiomas além da sua língua nativa configurada.</p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon">🧭</div>
+              <div class="achievement-info">
+                <h4>Explorador</h4>
+                <p>Faça o download e descubra novas obras no catálogo curado.</p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon">📣</div>
+              <div class="achievement-info">
+                <h4>Embaixador</h4>
+                <p>Compartilhe o aplicativo e o amor pelos livros com seus amigos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 3: Catálogo Curado & Coleções -->
+  <section class="catalog-section" id="catalogo">
+    <div class="container">
+      <div class="catalog-split">
+        <div class="catalog-cards-stack">
+          <div class="collection-card">
+            <div class="collection-meta">
+              <h4>Coleção Machado de Assis</h4>
+              <p>Dom Casmurro, Memórias Póstumas de Brás Cubas, Quincas Borba, O Alienista e contos selecionados com capa e metadados organizados.</p>
+            </div>
+            <span class="collection-tag">Editoriais</span>
+          </div>
+
+          <div class="collection-card">
+            <div class="collection-meta">
+              <h4>Top 100 Clássicos Mundiais</h4>
+              <p>As maiores obras da literatura mundial em português, inglês, espanhol e francês prontas para baixar em segundos.</p>
+            </div>
+            <span class="collection-tag">Gutenberg</span>
+          </div>
+
+          <div class="collection-card">
+            <div class="collection-meta">
+              <h4>Filosofia, História & Poesia</h4>
+              <p>Textos clássicos fundamentais curados pela equipe da iA Tech com verificação de qualidade dos arquivos EPUB.</p>
+            </div>
+            <span class="collection-tag">Curadoria</span>
+          </div>
+        </div>
+
+        <div class="catalog-content">
+          <div class="badge badge-green">Catálogo sem Custos Extras</div>
+          <h2 class="font-serif" style="font-size: 2.35rem; margin: 0.75rem 0 1rem 0;">Milhares de livros clássicos na palma da sua mão</h2>
+          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+            Acesse diretamente no aplicativo o acervo integrado com o Project Gutenberg e nossas Listas Editoriais Curadas. Encontre obras organizadas por autores, idiomas e coleções temáticas.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary); font-size: 0.98rem;">
+              <span style="color: var(--color-green); font-weight: 700;">✓</span> Downloads rápidos e salvos na memória do seu dispositivo.
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary); font-size: 0.98rem;">
+              <span style="color: var(--color-green); font-weight: 700;">✓</span> Filtros de busca por idioma (PT, EN, ES, FR) e listas de destaques.
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary); font-size: 0.98rem;">
+              <span style="color: var(--color-green); font-weight: 700;">✓</span> Sincronização inteligente de novidades sem pesar o aplicativo.
+            </li>
+          </ul>
+          <a href="https://play.google.com/store/apps/details?id=br.com.iatech.capitureader&pcampaignid=web_share" 
+             target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-location="catalog">
+            Explorar Catálogo no App
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 4: Capturas de Tela do Aplicativo -->
+  <section class="screenshots-section" id="capturas">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Interface do Aplicativo</div>
+        <h2>Conheça a experiência visual do Capitu Reader</h2>
+        <p>Design moderno, limpo e pensado nos mínimos detalhes para facilitar sua leitura e organização de e-books. Clique em qualquer imagem para ampliar.</p>
+      </div>
+
+      <div class="screenshots-scroll-wrapper">
+        <div class="screenshot-item" data-full-img="images/Screenshot_2026-08-26-14-02-50-838_br.com.iatech.capitureader.jpg">
+          <img src="images/Screenshot_2026-08-26-14-02-50-838_br.com.iatech.capitureader.jpg" alt="Tela Inicial do Capitu Reader com Streak e Meta Diária" loading="lazy">
+        </div>
+        <div class="screenshot-item" data-full-img="images/Screenshot_2026-08-26-14-02-56-383_br.com.iatech.capitureader.jpg">
+          <img src="images/Screenshot_2026-08-26-14-02-56-383_br.com.iatech.capitureader.jpg" alt="Leitor de Livro Imersivo em EPUB" loading="lazy">
+        </div>
+        <div class="screenshot-item" data-full-img="images/Screenshot_2026-08-26-14-03-03-628_br.com.iatech.capitureader.jpg">
+          <img src="images/Screenshot_2026-08-26-14-03-03-628_br.com.iatech.capitureader.jpg" alt="Aba Meus Livros e Biblioteca Pessoal A-Z" loading="lazy">
+        </div>
+        <div class="screenshot-item" data-full-img="images/Screenshot_2026-08-26-14-03-50-173_br.com.iatech.capitureader.jpg">
+          <img src="images/Screenshot_2026-08-26-14-03-50-173_br.com.iatech.capitureader.jpg" alt="Catálogo Curado e Listas Editoriais" loading="lazy">
+        </div>
+        <div class="screenshot-item" data-full-img="images/Screenshot_2026-08-26-14-03-56-836_br.com.iatech.capitureader.jpg">
+          <img src="images/Screenshot_2026-08-26-14-03-56-836_br.com.iatech.capitureader.jpg" alt="Aba de Conquistas, Badges e Tempo de Leitura" loading="lazy">
+        </div>
+        <div class="screenshot-item" data-full-img="images/Screenshot_2026-08-26-14-04-03-026_br.com.iatech.capitureader.jpg">
+          <img src="images/Screenshot_2026-08-26-14-04-03-026_br.com.iatech.capitureader.jpg" alt="Configurações de Conforto Visual e Temas de Leitura" loading="lazy">
+        </div>
+        <div class="screenshot-item" data-full-img="images/Screenshot_2026-08-26-14-04-06-659_br.com.iatech.capitureader.jpg">
+          <img src="images/Screenshot_2026-08-26-14-04-06-659_br.com.iatech.capitureader.jpg" alt="Visualização e Leitura de PDFs com Alto Desempenho" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Lightbox para Ampliar Screenshots -->
+  <div class="modal-lightbox" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visualizador de Imagem Ampliada">
+    <div class="modal-content">
+      <button class="modal-close" id="lightbox-close" aria-label="Fechar visualizador">&times;</button>
+      <img src="" id="lightbox-img" alt="Screenshot ampliada">
+    </div>
+  </div>
+
+  <!-- Seção 5: Versão Premium -->
+  <section class="premium-section" id="premium">
+    <div class="container">
+      <div class="premium-card-wrapper">
+        <span class="badge badge-gold">Investimento Único</span>
+        <h2>Capitu Leitor PDF/EPUB PREMIUM</h2>
+        <p>Apoie o desenvolvimento independente da iA Tech e desfrute de uma experiência totalmente livre de anúncios e interrupções.</p>
+
+        <div class="premium-features-grid">
+          <div class="premium-feature-box">
+            <h4>Sem Anúncios</h4>
+            <p>Remoção total e definitiva de anúncios nativos e intersticiais no aplicativo.</p>
+          </div>
+          <div class="premium-feature-box">
+            <h4>Pagamento Único</h4>
+            <p>Sem assinaturas mensais. Um único pagamento vitalício diretamente na Google Play.</p>
+          </div>
+          <div class="premium-feature-box">
+            <h4>Recursos Futuros</h4>
+            <p>Garantia de acesso antecipado às futuras expansões e recursos premium do app.</p>
+          </div>
+        </div>
+
+        <a href="https://play.google.com/store/apps/details?id=br.com.iatech.capitureader&pcampaignid=web_share" 
+           target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background-color: var(--color-gold); color: #231C18;" data-location="premium_box">
+          Obter Versão Premium na Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 6: Perguntas Frequentes (FAQ) -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Tire suas Dúvidas</div>
+        <h2>Perguntas Frequentes</h2>
+        <p>Tudo o que você precisa saber sobre o Capitu Leitor PDF/EPUB PREMIUM.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>O Capitu Reader é gratuito para usar?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Você pode baixar o aplicativo gratuitamente na Google Play Store, ler seus próprios arquivos EPUB e PDF e acessar todo o catálogo curado de obras clássicas de domínio público sem pagar nada.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Quais formatos de e-book são suportados?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>O aplicativo oferece suporte completo ao formato EPUB (com ajuste dinâmico de texto, tamanho de fonte e temas) e ao formato PDF (renderizado em alta fidelidade pelo mecanismo nativo pdfrx).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Preciso de conexão com a internet para ler?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Não. Todos os seus livros locais e obras já baixadas do catálogo ficam armazenados no seu dispositivo e podem ser lidos 100% offline em viagens, voos ou locais sem sinal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como funciona a gamificação e os Streaks?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Você escolhe sua meta diária de leitura (ex: 15 minutos). A cada dia que cumpre a meta, sua sequência (streak) aumenta. À medida que você lê, desbloqueia até 6 troféus/badges diferentes (Assíduo, Maratonista, Bibliotecário, Poliglota, Explorador e Embaixador) para celebrar sua dedicação.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>O que está incluso na Versão Premium?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>A compra da Versão Premium é um pagamento único (sem mensalidade) feito via Google Play IAP. Ela remove todos os anúncios do aplicativo e garante acesso antecipado aos futuros recursos exclusivos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta-final">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="font-serif">Redescubra o prazer de ler hoje mesmo</h2>
+        <p>Junte-se a leitores que estão transformando minutos diários em livros concluídos com o Capitu Leitor PDF/EPUB PREMIUM.</p>
+        <a href="https://play.google.com/store/apps/details?id=br.com.iatech.capitureader&pcampaignid=web_share" 
+           target="_blank" rel="noopener noreferrer" class="btn btn-playstore" style="font-size: 1.1rem; padding: 1rem 2.25rem;" data-location="cta_final">
+          <svg viewBox="0 0 24 24" style="width: 28px; height: 28px;">
+            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L18.81,13.97C19.46,13.59 19.46,12.41 18.81,12.03L16.81,10.88L14.4,12.7L16.81,15.12M14.4,11.3L4.95,1.85C5.11,1.8 5.28,1.77 5.46,1.77C5.9,1.77 6.33,1.96 6.64,2.14L14.4,11.3M4.95,22.15L14.4,12.7L6.64,21.86C6.33,22.04 5.9,22.23 5.46,22.23C5.28,22.23 5.11,22.2 4.95,22.15Z"/>
+          </svg>
+          Baixar Grátis na Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé (Footer) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="images/logo.png" alt="Capitu Logo" class="logo-img">
+            <span>Capitu PREMIUM</span>
+          </a>
+          <p>Leitor imersivo de PDF e EPUB com metas de leitura, troféus e catálogo curado de clássicos em domínio público.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#gamificacao">Gamificação</a></li>
+            <li><a href="#catalogo">Catálogo Curado</a></li>
+            <li><a href="#capturas">Capturas de Tela</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Produto</h4>
+          <ul class="footer-links">
+            <li><a href="#premium">Versão Premium</a></li>
+            <li><a href="#faq">Dúvidas Frequentes</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=br.com.iatech.capitureader&pcampaignid=web_share" target="_blank" rel="noopener">Google Play Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Desenvolvedor</h4>
+          <ul class="footer-links">
+            <li><a href="https://iatech.com.br/" target="_blank" rel="noopener">iA Tech</a></li>
+            <li><span>Pesquisa & IA</span></li>
+            <li><span>Brasil</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 iA Tech. Todos os direitos reservados. Capitu Leitor PDF/EPUB PREMIUM é uma marca iA Tech.</p>
+        <p>Project Gutenberg é uma marca registrada de Michael S. Hart.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
