@@ -1,0 +1,98 @@
+<article class="obra-card" id="obra-card-dom_quixote">
+  <div class="obra-grid">
+    <div class="ficha-tecnica">
+      <div class="ficha-header">
+        <span class="badge badge-gold">Literatura Espanhola</span>
+        <h3 class="font-serif">Dom Quixote</h3>
+        <span class="ficha-autor">por Miguel de Cervantes</span>
+      </div>
+
+      <!-- Abas do Card de Ficha Técnica -->
+      <div class="card-tabs-nav" role="tablist">
+        <button class="tab-btn active" role="tab" aria-selected="true" data-tab="ficha-quixote" onclick="switchObraTab(this, 'ficha-quixote')">
+          📋 Ficha Técnica
+        </button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="antes-ler-quixote" onclick="switchObraTab(this, 'antes-ler-quixote')">
+          💡 Antes de Ler
+        </button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="opiniao-quixote" onclick="switchObraTab(this, 'opiniao-quixote')">
+          ✍️ Minha Opinião
+        </button>
+      </div>
+
+      <!-- Aba 1: Ficha Técnica -->
+      <div class="tab-content active" id="ficha-quixote" role="tabpanel">
+        <div class="ficha-meta-grid">
+          <div class="ficha-meta-item">
+            <strong>Publicação Original</strong>
+            <span>1605 / 1615</span>
+          </div>
+          <div class="ficha-meta-item">
+            <strong>Gênero Literário</strong>
+            <span>Sátira de Cavalaria</span>
+          </div>
+          <div class="ficha-meta-item">
+            <strong>Idioma Disponível</strong>
+            <span>Português / Espanhol</span>
+          </div>
+          <div class="ficha-meta-item">
+            <strong>Formatos no App</strong>
+            <span>EPUB & PDF</span>
+          </div>
+        </div>
+
+        <p class="ficha-resumo">
+          A obra-prima da literatura espanhola e fundadora do romance moderno. Narra as hilariantes e tocantes aventuras de Alonso Quijano, um fidalgo que enlouquece após ler compulsivamente romances de cavalaria e parte pelos campos da Mancha auto-proclamado cavaleiro andante Dom Quixote, acompanhado por seu leal escudeiro Sancho Pança.
+        </p>
+
+        <div class="ficha-footer">
+          <span class="badge badge-green">⚡ Disponível no Catálogo Curado</span>
+          <span class="badge">Download Gratuito</span>
+        </div>
+      </div>
+
+      <!-- Aba 2: Antes de Ler -->
+      <div class="tab-content" id="antes-ler-quixote" role="tabpanel">
+        <div class="antes-ler-intro">
+          <strong>Pontos de Atenção & Perspectiva Crítica</strong>
+          <p>Aspectos essenciais que o leitor deve ter em mente ao explorar esta obra:</p>
+        </div>
+
+        <div class="alert-tags-list">
+          <div class="alert-tag-item">
+            <span class="alert-badge">[Quixotismo e Idealismo]</span>
+            <p><strong>O que observar:</strong> A tênue linha entre a loucura idealista de Quixote e a sanidade pragmática do mundo real. O leitor deve notar como a fantasia cavaleiresca colide constantemente com a crueza social da Espanha do século XVII.</p>
+          </div>
+
+          <div class="alert-tag-item">
+            <span class="alert-badge">[Metalinguagem e Paródia]</span>
+            <p><strong>O que observar:</strong> Cervantes constrói o primeiro grande romance moderno desconstruindo e parodiando as convenções estilísticas dos romances de cavalaria medievais.</p>
+          </div>
+
+          <div class="alert-tag-item">
+            <span class="alert-badge">[A Relação Quixote-Sancho]</span>
+            <p><strong>O que observar:</strong> O contraste dialético e a gradual contaminação mútua: Quixote vai se "sanchificando" à medida que Sancho Pança vai se "quixotizando" ao longo da jornada.</p>
+          </div>
+
+          <div class="alert-tag-item">
+            <span class="alert-badge">[Sátira Social e Inquisição]</span>
+            <p><strong>O que observar:</strong> A crítica velada à nobreza decadente, ao tribunal da Inquisição e à rigidez de classes do Século de Ouro espanhol.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aba 3: Minha Opinião -->
+      <div class="tab-content" id="opiniao-quixote" role="tabpanel">
+        <div class="opiniao-placeholder-box">
+          <span class="opiniao-icon">✍️</span>
+          <strong>Minha Opinião sobre Dom Quixote</strong>
+          <p>Em breve: opinião do leitor após a leitura da obra.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="obra-image-container" style="max-width: 320px; margin: 0 auto;">
+      <img src="images/sancho_pança.webp" alt="Ilustração em retrato do personagem Sancho Pança na obra Dom Quixote" loading="lazy">
+    </div>
+  </div>
+</article>

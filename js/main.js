@@ -109,4 +109,120 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // 5. Alternância de Abas nos Cards de Obras (Ficha Técnica / Antes de Ler)
+  window.switchObraTab = function(button, targetId) {
+    if (!button) return;
+    const cardContainer = button.closest('.ficha-tecnica') || button.closest('.obra-card');
+    const navContainer = button.closest('.card-tabs-nav');
+    const idToOpen = targetId || button.getAttribute('data-tab');
+
+    if (cardContainer && idToOpen) {
+      if (navContainer) {
+        navContainer.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+        });
+      }
+
+      cardContainer.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+
+      button.classList.add('active');
+      button.setAttribute('aria-selected', 'true');
+
+      const targetContent = document.getElementById(idToOpen) || cardContainer.querySelector(`#${idToOpen}`);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+    }
+  };
+
+  const tabButtons = document.querySelectorAll('.card-tabs-nav .tab-btn');
+  tabButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = button.getAttribute('data-tab');
+      window.switchObraTab(button, targetId);
+    });
+  });
+
+  // 6. Carregamento Dinâmico de Obras (Fetch), Busca e Seleção Aleatória Inicial
+  window.loadObraCard = function(obraId) {
+    const container = document.getElementById('obra-active-container');
+    if (!container || !obraId) return;
+
+    // Atualizar classe ativa nas miniaturas do carrossel
+    document.querySelectorAll('.carousel-thumb-item').forEach(thumb => {
+      if (thumb.getAttribute('data-obra') === obraId) {
+        thumb.classList.add('active');
+      } else {
+        thumb.classList.remove('active');
+      }
+    });
+
+    // Carregar fragmento HTML via Fetch
+    fetch(`obras/${obraId}.html`)
+      .then(response => {
+        if (!response.ok) throw new Error(`Erro ao carregar obra: ${obraId}`);
+        return response.text();
+      })
+      .then(html => {
+        container.innerHTML = html;
+        // Re-associar manipuladores de abas
+        container.querySelectorAll('.card-tabs-nav .tab-btn').forEach(button => {
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = button.getAttribute('data-tab');
+            window.switchObraTab(button, targetId);
+          });
+        });
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  };
+
+  // Inicialização do Catálogo no Universo Leitor
+  const activeContainer = document.getElementById('obra-active-container');
+  if (activeContainer) {
+    const thumbs = document.querySelectorAll('.carousel-thumb-item');
+    const availableObras = Array.from(thumbs).map(t => t.getAttribute('data-obra')).filter(Boolean);
+
+    // Sorteio Aleatório Inicial caso existam obras cadastradas
+    if (availableObras.length > 0) {
+      const randomIndex = Math.floor(Math.random() * availableObras.length);
+      const randomObraId = availableObras[randomIndex];
+      window.loadObraCard(randomObraId);
+    }
+
+    // Clique nas miniaturas do carrossel
+    thumbs.forEach(thumb => {
+      thumb.addEventListener('click', (e) => {
+        e.preventDefault();
+        const obraId = thumb.getAttribute('data-obra');
+        window.loadObraCard(obraId);
+      });
+    });
+
+    // Filtro de Busca Simples
+    const searchInput = document.getElementById('obras-search-input');
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        thumbs.forEach(thumb => {
+          const title = (thumb.getAttribute('data-title') || '').toLowerCase();
+          const author = (thumb.getAttribute('data-author') || '').toLowerCase();
+          if (title.includes(query) || author.includes(query)) {
+            thumb.style.display = 'flex';
+          } else {
+            thumb.style.display = 'none';
+          }
+        });
+      });
+    }
+  }
 });
+
+
