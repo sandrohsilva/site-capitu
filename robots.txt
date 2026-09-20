@@ -1,4 +1,4 @@
-# robots.txt para Capitu Leitor PDF/EPUB PREMIUM
+# robots.txt para Capitu Leitor de Livros e PDF
 User-agent: *
 Allow: /
 

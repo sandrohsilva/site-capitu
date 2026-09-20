@@ -1,5 +1,5 @@
 /**
- * Capitu Leitor PDF/EPUB PREMIUM — Main JavaScript
+ * Capitu Leitor de Livros e PDF — Main JavaScript
  * Interatividade, Lightbox de screenshots, FAQ Sanfona e Helper de Tracking.
  */
 

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Capitu Leitor PDF/EPUB PREMIUM — Design System & Stylesheet
+   Capitu Leitor de Livros e PDF — Design System & Stylesheet
    Estética: Tons claros, inspiração em papel e leitura, tipografia requintada.
    ========================================================================== */
 
@@ -271,10 +271,10 @@ button, input {
   font-family: var(--font-sans);
   font-weight: 700;
   letter-spacing: 0.05em;
-  background-color: var(--color-primary);
+  background-color: var(--color-green);
   color: #FFFFFF;
-  padding: 0.15rem 0.45rem;
-  border-radius: 4px;
+  padding: 0.18rem 0.55rem;
+  border-radius: var(--radius-pill);
   vertical-align: middle;
 }
 
@@ -900,41 +900,228 @@ button, input {
 }
 
 /* --------------------------------------------------------------------------
-   11. Seção Versão Premium
+   10.1 Seção Comparativa (Capitu vs. Concorrentes da Play Store)
    -------------------------------------------------------------------------- */
-.premium-section {
+.comparison-section {
+  padding: 6rem 0;
+  background-color: var(--bg-surface-alt);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.comparison-table-container {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow-x: auto;
+  margin-bottom: 3.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 760px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.35rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.comparison-table th {
+  background-color: #F8F5F0;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.comparison-table th.col-feature {
+  width: 28%;
+}
+
+.comparison-table th.col-capitu,
+.comparison-table td.col-capitu {
+  background-color: rgba(200, 109, 64, 0.05);
+  font-weight: 600;
+  color: var(--text-primary);
+  border-left: 2px solid rgba(200, 109, 64, 0.2);
+  border-right: 2px solid rgba(200, 109, 64, 0.2);
+}
+
+.comparison-table th.col-capitu {
+  background-color: rgba(200, 109, 64, 0.12);
+  border-top: 3px solid var(--color-primary);
+}
+
+.col-capitu-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.col-capitu-badge {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: rgba(243, 239, 234, 0.5);
+}
+
+.comparison-table tbody tr:hover td.col-capitu {
+  background-color: rgba(200, 109, 64, 0.09);
+}
+
+.comp-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.comp-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.comp-icon.yes {
+  background-color: var(--color-green-light);
+  color: var(--color-green);
+  border: 1px solid rgba(45, 122, 88, 0.3);
+}
+
+.comp-icon.no {
+  background-color: #FCE8E8;
+  color: #C0392B;
+  border: 1px solid rgba(192, 57, 43, 0.25);
+}
+
+.comp-icon.partial {
+  background-color: #FEF3D6;
+  color: #B87A00;
+  border: 1px solid rgba(184, 122, 0, 0.25);
+}
+
+.comp-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.comp-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.comp-sub {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.comparison-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.comp-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.comp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.comp-card-icon {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.comp-card p {
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   11. Seção Modelo Transparente & Justo (100% Gratuito com Apoio Opcional)
+   -------------------------------------------------------------------------- */
+.fair-model-section {
   padding: 6rem 0;
   background-color: var(--bg-dark-paper);
   color: var(--text-inverse);
   position: relative;
 }
 
-.premium-card-wrapper {
-  background: linear-gradient(135deg, #2D231E 0%, #3D302A 100%);
+.fair-card-wrapper {
+  background: linear-gradient(135deg, #2D231E 0%, #382C26 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-lg);
   padding: 4rem 3rem;
   text-align: center;
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-.premium-card-wrapper h2 {
+.fair-card-wrapper h2 {
   color: #FFFFFF;
   font-size: 2.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.premium-card-wrapper p {
-  color: rgba(250, 247, 242, 0.8);
+.fair-card-wrapper p.fair-intro {
+  color: rgba(250, 247, 242, 0.85);
   font-size: 1.15rem;
-  max-width: 650px;
-  margin: 0 auto 2.5rem auto;
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.7;
 }
 
-.premium-features-grid {
+.fair-features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
@@ -942,22 +1129,56 @@ button, input {
   margin-bottom: 3rem;
 }
 
-.premium-feature-box {
+.fair-feature-box {
   background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-md);
-  padding: 1.5rem;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.premium-feature-box h4 {
-  color: #FFFFFF;
-  font-family: var(--font-sans);
-  font-size: 1.05rem;
+.fair-feature-box.highlight-box {
+  border-color: rgba(45, 122, 88, 0.4);
+  background-color: rgba(45, 122, 88, 0.1);
+}
+
+.fair-tag {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
   margin-bottom: 0.5rem;
 }
 
-.premium-feature-box p {
+.fair-tag-free {
+  background-color: var(--color-green);
+  color: #FFFFFF;
+}
+
+.fair-tag-neutral {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #FAF7F2;
+}
+
+.fair-tag-support {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.fair-feature-box h4 {
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+}
+
+.fair-feature-box p {
   font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(250, 247, 242, 0.75);
   margin-bottom: 0;
 }
 
@@ -1132,7 +1353,9 @@ button, input {
   }
 
   .features-grid,
-  .premium-features-grid {
+  .premium-features-grid,
+  .fair-features-grid,
+  .comparison-cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1175,6 +1398,8 @@ button, input {
 
   .features-grid,
   .premium-features-grid,
+  .fair-features-grid,
+  .comparison-cards-grid,
   .achievements-grid {
     grid-template-columns: 1fr;
   }
