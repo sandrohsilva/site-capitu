@@ -7,13 +7,9 @@
   "languageTgt": "pt",
   "packVersion": 2,
   "art": {
-    "default": "art/default.webp",
     "words": "art/words.webp",
     "meaning": "art/meaning.webp",
-    "mix": "art/mix.webp",
-    "wordle": "art/wordle.webp",
-    "hangman": "art/hangman.webp",
-    "stackwords": "art/stackwords.webp"
+    "mix": "art/mix.webp"
   },
   "cover": "cover.webp",
   "vocab": "vocab.sqlite"

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "contextId": "pg:2638",
+  "title": "The Idiot",
+  "author": "Fyodor Dostoyevsky",
+  "languageSrc": "en",
+  "languageTgt": "pt",
+  "packVersion": 2,
+  "cover": "cover.webp",
+  "vocab": "vocab.sqlite",
+  "postings": "postings.sqlite",
+  "lexiconVersion": 1789951833691
+}
