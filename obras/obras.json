@@ -7,5 +7,14 @@
     "genre": "Realismo Psicológico, Drama Expressionista",
     "cover": "books/pg-57052/cover.webp",
     "url": "obras/pg-57052.html"
+  },
+  {
+    "slug": "pg-2638",
+    "title": "The Idiot",
+    "author": "Fyodor Dostoyevsky",
+    "badge": "Literatura Russa",
+    "genre": "Romance Realista",
+    "cover": "books/pg-2638/cover.webp",
+    "url": "obras/pg-2638.html"
   }
 ]
