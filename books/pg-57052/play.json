@@ -5,7 +5,7 @@
   "author": "August Strindberg",
   "languageSrc": "sv",
   "languageTgt": "pt",
-  "packVersion": 2,
+  "packVersion": 4,
   "cover": "cover.webp",
   "vocab": "vocab.sqlite",
   "postings": "postings.sqlite",

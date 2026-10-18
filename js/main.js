@@ -169,7 +169,16 @@ document.addEventListener('DOMContentLoaded', () => {
         return response.text();
       })
       .then(html => {
-        container.innerHTML = html;
+        let contentToInsert = html;
+        try {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          const card = doc.querySelector('.obra-card');
+          if (card) {
+            contentToInsert = card.outerHTML;
+          }
+        } catch (_) {}
+        container.innerHTML = contentToInsert;
         // Re-associar manipuladores de abas
         container.querySelectorAll('.card-tabs-nav .tab-btn').forEach(button => {
           button.addEventListener('click', (e) => {
