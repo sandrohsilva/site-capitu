@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "contextId": "pg:2638",
-  "title": "The Idiot",
-  "author": "Fyodor Dostoyevsky",
+  "contextId": "pg:49324",
+  "title": "The Authoress of the Odyssey",
+  "author": "Samuel Butler",
   "languageSrc": "en",
   "languageTgt": "pt",
   "packVersion": 2,
   "cover": "cover.webp",
   "vocab": "vocab.sqlite",
   "postings": "postings.sqlite",
-  "lexiconVersion": 1789951833691
+  "lexiconVersion": 1792332952449
 }
