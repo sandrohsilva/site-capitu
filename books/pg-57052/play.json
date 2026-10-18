@@ -5,6 +5,9 @@
   "author": "August Strindberg",
   "languageSrc": "en",
   "languageTgt": "pt",
-  "packVersion": 1,
-  "cover": "cover.webp"
+  "packVersion": 2,
+  "cover": "cover.webp",
+  "vocab": "vocab.sqlite",
+  "postings": "postings.sqlite",
+  "lexiconVersion": 1792340948663
 }

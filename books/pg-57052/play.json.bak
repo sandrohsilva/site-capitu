@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "contextId": "pg:57052",
+  "title": "Röda rummet",
+  "author": "August Strindberg",
+  "languageSrc": "en",
+  "languageTgt": "pt",
+  "packVersion": 1,
+  "cover": "cover.webp"
+}
