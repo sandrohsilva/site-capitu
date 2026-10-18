@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "contextId": "pg:3160",
+  "title": "The Odyssey",
+  "author": "Homer",
+  "languageSrc": "en",
+  "languageTgt": "pt",
+  "packVersion": 2,
+  "cover": "cover.webp",
+  "vocab": "vocab.sqlite",
+  "postings": "postings.sqlite",
+  "lexiconVersion": 1792332952449
+}
