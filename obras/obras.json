@@ -16,5 +16,14 @@
     "genre": "Romance Realista",
     "cover": "books/pg-2638/cover.webp",
     "url": "obras/pg-2638.html"
+  },
+  {
+    "slug": "pg-2701",
+    "title": "Moby Dick; or The Whale",
+    "author": "Herman Melville",
+    "badge": "Literatura Clássica Americana",
+    "genre": "Romance de Aventura / Realismo",
+    "cover": "books/pg-2701/cover.webp",
+    "url": "obras/pg-2701.html"
   }
 ]

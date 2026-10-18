@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "contextId": "pg:2701",
+  "title": "Moby Dick; or The Whale",
+  "author": "Herman Melville",
+  "languageSrc": "en",
+  "languageTgt": "pt",
+  "packVersion": 2,
+  "art": {
+    "default": "art/default.webp",
+    "words": "art/words.webp",
+    "meaning": "art/meaning.webp",
+    "mix": "art/mix.webp",
+    "wordle": "art/wordle.webp",
+    "hangman": "art/hangman.webp",
+    "stackwords": "art/stackwords.webp"
+  },
+  "cover": "cover.webp",
+  "vocab": "vocab.sqlite"
+}
