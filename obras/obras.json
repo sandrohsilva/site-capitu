@@ -25,5 +25,14 @@
     "genre": "Romance de Aventura / Realismo",
     "cover": "books/pg-2701/cover.webp",
     "url": "obras/pg-2701.html"
+  },
+  {
+    "slug": "pg-3160",
+    "title": "The Odyssey",
+    "author": "Homer",
+    "badge": "Literatura Clássica Grega",
+    "genre": "Épico",
+    "cover": "books/pg-3160/cover.webp",
+    "url": "obras/pg-3160.html"
   }
 ]
