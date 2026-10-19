@@ -34,5 +34,14 @@
     "genre": "Épico",
     "cover": "books/pg-3160/cover.webp",
     "url": "obras/pg-3160.html"
+  },
+  {
+    "slug": "pg-5097",
+    "title": "20000 Lieues sous les mers Parts 1 & 2",
+    "author": "Jules Verne",
+    "badge": "Aventura Científica",
+    "genre": "Romance de Aventura",
+    "cover": "books/pg-5097/cover.webp",
+    "url": "obras/pg-5097.html"
   }
 ]

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "contextId": "pg:5097",
+  "title": "20000 Lieues sous les mers Parts 1 & 2",
+  "author": "Jules Verne",
+  "languageSrc": "fr",
+  "languageTgt": "pt",
+  "packVersion": 2,
+  "cover": "cover.webp",
+  "vocab": "vocab.sqlite",
+  "postings": "postings.sqlite",
+  "lexiconVersion": 1792340948663
+}
